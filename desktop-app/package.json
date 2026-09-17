@@ -1,0 +1,17 @@
+{
+  "name": "desmon-run",
+  "version": "1.0.0",
+  "description": "Desmon Run — Desmond parkours through Monteriggioni (Windows desktop)",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-packager . DesmonRun --platform=win32 --arch=x64 --overwrite --out=../dist --prune"
+  },
+  "devDependencies": {
+    "electron": "^36.0.0",
+    "electron-packager": "^17.1.2"
+  },
+  "dependencies": {
+    "three-mesh-bvh": "^0.9.15"
+  }
+}

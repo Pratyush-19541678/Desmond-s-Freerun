@@ -1,0 +1,7 @@
+# Generated desktop application output and installed dependencies
+dist/
+desktop-app/node_modules/
+
+# Local operating-system/editor files
+.DS_Store
+Thumbs.db

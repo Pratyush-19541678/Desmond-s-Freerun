@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>Desmon Run — Parkour Through Monteriggioni</title>
+<link rel="stylesheet" href="./style.css" />
+<script type="importmap">
+{
+  "imports": {
+    "three": "../three.js/build/three.module.js",
+    "three/addons/": "../three.js/examples/jsm/",
+    "three-mesh-bvh": "./libs/three-mesh-bvh.module.js",
+    "cannon-es": "./libs/cannon-es.module.js"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="app">
+    <canvas id="game-canvas"></canvas>
+
+    <!-- Loading -->
+    <div id="loading" class="overlay">
+      <div class="load-card">
+        <h1>DESMON <span>RUN</span></h1>
+        <p class="sub">Parkour through Monteriggioni</p>
+        <div class="bar"><div id="load-fill"></div></div>
+        <p id="load-text">Loading city…</p>
+      </div>
+    </div>
+
+    <!-- Start / help -->
+    <div id="menu" class="overlay hidden">
+      <div class="menu-card">
+        <h1>DESMON <span>RUN</span></h1>
+        <p class="tag">You are <b>Desmond</b> — the only runner in Monteriggioni.<br/>You start atop the highest tower viewpoint. Walk, sprint, climb, hang from ledges and dive across the open rooftops.</p>
+        <div class="controls-grid">
+          <div><kbd>W A S D</kbd><span>walk (camera-relative)</span></div>
+          <div><kbd>Shift + move</kbd><span>sprint · Q / E or double-tap A/D = feint · C = slide</span></div>
+          <div><kbd>Space</kbd><span>jump (tap = hop, hold = high)</span></div>
+          <div><kbd>On a wall</kbd><span>WASD climb (≤12 m) · Space jump off</span></div>
+          <div><kbd>Hanging / Air</kbd><span>W pull up · S drop · E dive</span></div>
+          <div><kbd>C / Z</kbd><span>hold = crouch · toggle = prone crawl (tunnels)</span></div>
+          <div><kbd>Mouse / R</kbd><span>look (click = lock) · respawn</span></div>
+        </div>
+        <button id="play-btn">▶ &nbsp;START RUNNING</button>
+        <p class="hint">Tip: sprint at a wall to <b>climb it</b>, fall past a ledge to <b>hang</b>, and dive from the tower into the hay bale for a <b>leap of faith</b>.</p>
+        <p class="credit">City: “Monteriggioni” by Olaf.Rodowald, CC-BY-4.0 (see README).<br/>Desmond: converted from AC1-Desmond_Miles.blend with authored parkour animations.</p>
+      </div>
+    </div>
+
+    <!-- HUD -->
+    <div id="hud" class="hidden">
+      <div id="hud-top">
+        <div class="pill" id="timer-pill">⏱ 0:00.0</div>
+        <div class="pill" id="speed-pill">≫ 0 m/s</div>
+      </div>
+      <div id="stamina-wrap"><div id="stamina-fill"></div><span>STAMINA (Shift = sprint)</span></div>
+      <div id="move-popup"></div>
+      <div id="hint-bar">Walk with <b>WASD</b> · hold <b>Shift</b> to sprint · run at walls to climb</div>
+      <div id="crosshair"></div>
+    </div>
+
+    <!-- Touch controls -->
+    <div id="touch" class="hidden">
+      <div id="stick"><div id="stick-knob"></div></div>
+      <div id="touch-btns">
+        <button id="btn-jump">JUMP</button>
+        <button id="btn-sprint">SPRINT</button>
+        <button id="btn-vault">VAULT</button>
+        <button id="btn-crouch">CROUCH</button>
+      </div>
+    </div>
+
+    <div id="toast"></div>
+    <div id="vignette"></div>
+    <div id="flash"></div>
+  </div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>

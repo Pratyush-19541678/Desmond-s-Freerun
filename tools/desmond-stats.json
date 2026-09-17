@@ -1,0 +1,113 @@
+{
+  "meshes": [
+    "PRCM_Jack_Hands",
+    "PRCM_Jack_Head",
+    "PRCM_Jack_Pants",
+    "PRCM_Jack_Shirt",
+    "PRCM_Jack_Shoes",
+    "PRCM_Jack_TShirt",
+    "Universal_Head_Obj_Clean"
+  ],
+  "armatures": [
+    "Reference.001"
+  ],
+  "actions": [
+    {
+      "name": "Desmond_Climb",
+      "frame_start": 1.0,
+      "frame_end": 24.0
+    },
+    {
+      "name": "Desmond_Crouch",
+      "frame_start": 1.0,
+      "frame_end": 12.0
+    },
+    {
+      "name": "Desmond_Dive",
+      "frame_start": 1.0,
+      "frame_end": 12.0
+    },
+    {
+      "name": "Desmond_Dodge",
+      "frame_start": 1.0,
+      "frame_end": 10.0
+    },
+    {
+      "name": "Desmond_Fall",
+      "frame_start": 1.0,
+      "frame_end": 16.0
+    },
+    {
+      "name": "Desmond_Hang",
+      "frame_start": 1.0,
+      "frame_end": 16.0
+    },
+    {
+      "name": "Desmond_Hold",
+      "frame_start": 1.0,
+      "frame_end": 12.0
+    },
+    {
+      "name": "Desmond_Idle",
+      "frame_start": 1.0,
+      "frame_end": 72.0
+    },
+    {
+      "name": "Desmond_Jump",
+      "frame_start": 1.0,
+      "frame_end": 24.0
+    },
+    {
+      "name": "Desmond_Prone",
+      "frame_start": 1.0,
+      "frame_end": 16.0
+    },
+    {
+      "name": "Desmond_Rise",
+      "frame_start": 1.0,
+      "frame_end": 12.0
+    },
+    {
+      "name": "Desmond_Run",
+      "frame_start": 1.0,
+      "frame_end": 24.0
+    },
+    {
+      "name": "Desmond_Slide",
+      "frame_start": 1.0,
+      "frame_end": 12.0
+    },
+    {
+      "name": "Desmond_Walk",
+      "frame_start": 1.0,
+      "frame_end": 24.0
+    }
+  ],
+  "materials": [
+    "common_mouth_clean",
+    "Eye",
+    "PRCM_Jack_Hands",
+    "PRCM_Jack_Head",
+    "PRCM_Jack_Pants",
+    "PRCM_Jack_Shoes",
+    "PRCM_Jack_Torso",
+    "PRCM_Jack_Torso_Hood"
+  ],
+  "bbox_min": [
+    -0.4802658259868622,
+    -0.2632816433906555,
+    -0.9066877961158752
+  ],
+  "bbox_max": [
+    0.47843417525291443,
+    0.21272563934326172,
+    0.8722228407859802
+  ],
+  "bbox_size": [
+    0.9587000012397766,
+    0.47600728273391724,
+    1.7789106369018555
+  ],
+  "glb": "C:\\Users\\PRATUYSH\\Downloads\\Desmon Run\\game\\desmond.glb",
+  "glb_bytes": 8024896
+}
